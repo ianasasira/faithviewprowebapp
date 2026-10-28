@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Download — FaithView Pro</title>
-  <meta name="description" content="Download FaithView Pro for Windows and get running in minutes. 30-day free trial, no credit card required. macOS coming soon.">
+  <meta name="description" content="Download FaithView Pro v0.1.0-beta.1 (Public Beta) for Windows and Linux (64-bit). Official installers and installation instructions. macOS coming soon.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231DB954'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='36' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
       </nav>
       <div class="nav-cta">
         <a class="nav-signin" href="#">My Account</a>
-        <a class="btn btn-primary btn-sm" href="download.html">Start Free Trial</a>
+        <a class="btn btn-primary btn-sm" href="download.html">Download Beta</a>
         <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
         </button>
@@ -44,20 +44,21 @@
       <a href="download.html" class="active">Download</a>
       <a href="support.html">Support</a>
       <a href="#">My Account</a>
-      <a class="btn btn-primary" href="download.html">Start Free Trial</a>
+      <a class="btn btn-primary" href="download.html">Download Beta</a>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Get started</span>
+        <span class="eyebrow">v0.1.0-beta.1 (Public Beta)</span>
         <h1>Get running before the service starts</h1>
-        <p class="section-lead">Pick your platform, install, and you're live in minutes. Every download starts with a 30-day free trial — no credit card required.</p>
+        <p class="section-lead">Pick your platform and install the public beta for Windows or Linux (64-bit).</p>
+        <p class="beta-notice">This is a beta release; you may encounter bugs. <a href="https://github.com/FaithView-Pro/faithview-pro-releases/releases">View release notes and all releases on GitHub</a>.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="downloads">
       <div class="container">
         <div class="os-grid reveal">
           <div class="os-card">
@@ -66,11 +67,18 @@
             </div>
             <h3>Windows</h3>
             <p class="os-meta">Windows 10 &amp; 11 (64-bit) · Available now</p>
-            <!-- TODO: wire this button to the real Windows installer URL -->
-            <a class="btn btn-primary" href="#">
+            <a class="btn btn-primary" href="https://github.com/FaithView-Pro/faithview-pro-releases/releases/download/v0.1.0-beta.1/FaithView-Pro-0.1.0-beta.1-x64.exe">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path></svg>
-              Download for Windows
+              Download for Windows (64-bit)
             </a>
+          </div>
+          <div class="os-card">
+            <div class="os-glyph">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="m7 9 3 3-3 3m6 0h4"></path></svg>
+            </div>
+            <h3>Linux</h3>
+            <p class="os-meta">Linux (64-bit) · AppImage · Available now</p>
+            <a class="btn btn-primary" href="https://github.com/FaithView-Pro/faithview-pro-releases/releases/download/v0.1.0-beta.1/FaithView-Pro-0.1.0-beta.1-x64.AppImage">Download for Linux (64-bit)</a>
           </div>
           <div class="os-card soon">
             <div class="os-glyph">
@@ -83,7 +91,7 @@
           </div>
         </div>
 
-        <div class="center reveal" style="margin-top:88px;">
+        <div class="center reveal" id="installation" style="margin-top:88px;">
           <span class="eyebrow">Setup</span>
           <h2 class="section-title">Running in four steps</h2>
         </div>
@@ -91,12 +99,15 @@
           <div class="step-card">
             <div class="step-num">1</div>
             <h3>Download</h3>
-            <p>Grab the Windows installer above. It's a standard setup — no account needed to start the trial.</p>
+            <p>Choose the Windows .exe installer or Linux AppImage above for your 64-bit computer.</p>
           </div>
           <div class="step-card">
             <div class="step-num">2</div>
             <h3>Install</h3>
-            <p>Run the installer and follow the prompts. FaithView Pro lands on your desktop in a couple of minutes.</p>
+            <p><strong>Windows:</strong> Download and run the .exe installer. Windows may show a warning because the installer is not yet Authenticode-signed.</p>
+            <p><strong>Linux:</strong> Download the AppImage, make it executable, and launch it. In the download folder, run:</p>
+            <pre class="install-command"><code>chmod +x FaithView-Pro-0.1.0-beta.1-x64.AppImage
+./FaithView-Pro-0.1.0-beta.1-x64.AppImage</code></pre>
           </div>
           <div class="step-card">
             <div class="step-num">3</div>
@@ -113,7 +124,7 @@
         <div class="sysreq reveal">
           <h3 style="font-size:1.2rem; font-weight:800;">System requirements</h3>
           <ul class="sysreq-grid">
-            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Windows 10 or 11, 64-bit</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Windows 10 or 11, or Linux, 64-bit</li>
             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> 8 GB RAM minimum (16 GB recommended)</li>
             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Microphone or audio line-in, for detection</li>
             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> ~2 GB free disk space for models &amp; media</li>
@@ -129,10 +140,10 @@
     <section class="section cta-band">
       <div class="container">
         <div class="cta-band-inner reveal">
-          <h2>Thirty days. Every feature.</h2>
-          <p>No credit card, no commitment — just better Sundays.</p>
-          <!-- TODO: wire to the real Windows installer URL -->
-          <a class="btn btn-dark" href="#">Download for Windows</a>
+          <h2>Try the public beta</h2>
+          <p>v0.1.0-beta.1 (Public Beta) — you may encounter bugs.</p>
+          <a class="btn btn-dark" href="https://github.com/FaithView-Pro/faithview-pro-releases/releases/download/v0.1.0-beta.1/FaithView-Pro-0.1.0-beta.1-x64.exe">Download for Windows (64-bit)</a>
+          <a class="btn btn-outline" href="https://github.com/FaithView-Pro/faithview-pro-releases/releases/download/v0.1.0-beta.1/FaithView-Pro-0.1.0-beta.1-x64.AppImage">Download for Linux (64-bit)</a>
         </div>
       </div>
     </section>
@@ -163,8 +174,7 @@
             <li><a href="features.html">Features</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="download.html">Download</a></li>
-            <!-- TODO: add What's New / changelog page -->
-            <li><a href="#">What's New</a></li>
+            <li><a href="https://github.com/FaithView-Pro/faithview-pro-releases/releases">What's New</a></li>
           </ul>
         </div>
         <div class="footer-col">
